@@ -6,9 +6,9 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Unified API
   - Aggregation
   - Normalization
+  - Unified API
 url: >-
   https://raw.githubusercontent.com/api-evangelist/unified-apis/refs/heads/main/apis.yml
 created: '2026-03-27'
