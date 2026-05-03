@@ -1,0 +1,36 @@
+{
+  "summary": "Salesforce CRM Connector Definition",
+  "description": "Example connector definition for the Salesforce CRM integration in a unified API platform.",
+  "connectorId": "salesforce-crm",
+  "name": "Salesforce",
+  "description": "Normalized CRM data access for Salesforce including Contacts, Leads, Accounts, Opportunities, and Activities. Supports bidirectional sync and real-time webhooks via Salesforce Platform Events.",
+  "provider": "Salesforce",
+  "providerUrl": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/",
+  "category": "crm",
+  "authType": "oauth2",
+  "dataObjects": [
+    "Contact",
+    "Lead",
+    "Account",
+    "Opportunity",
+    "Activity",
+    "Note",
+    "Task",
+    "User"
+  ],
+  "supportedOperations": ["create", "read", "update", "delete", "list", "search"],
+  "webhookSupport": true,
+  "fieldMapping": {
+    "firstName": "FirstName",
+    "lastName": "LastName",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "AccountId",
+    "title": "Title"
+  },
+  "rateLimits": {
+    "requestsPerDay": 100000
+  },
+  "sandboxAvailable": true,
+  "status": "ga"
+}

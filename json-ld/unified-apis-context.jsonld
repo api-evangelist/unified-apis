@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "unified": "https://github.com/api-evangelist/unified-apis/blob/main/json-ld/unified-apis-context.jsonld#",
+
+    "Connector": "unified:Connector",
+    "UnifiedAPI": "unified:UnifiedAPI",
+    "DataObject": "unified:DataObject",
+
+    "connectorId": "schema:identifier",
+    "name": "schema:name",
+    "description": "schema:description",
+    "provider": {
+      "@id": "unified:provider",
+      "@type": "xsd:string"
+    },
+    "providerUrl": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "category": {
+      "@id": "unified:category",
+      "@type": "@vocab"
+    },
+    "authType": {
+      "@id": "unified:authType",
+      "@type": "@vocab"
+    },
+    "dataObjects": {
+      "@id": "unified:dataObjects",
+      "@container": "@list"
+    },
+    "supportedOperations": {
+      "@id": "unified:supportedOperations",
+      "@container": "@list"
+    },
+    "webhookSupport": {
+      "@id": "unified:webhookSupport",
+      "@type": "xsd:boolean"
+    },
+    "sandboxAvailable": {
+      "@id": "unified:sandboxAvailable",
+      "@type": "xsd:boolean"
+    },
+    "status": {
+      "@id": "unified:status",
+      "@type": "@vocab"
+    },
+    "fieldMapping": {
+      "@id": "unified:fieldMapping",
+      "@type": "@id"
+    },
+
+    "categories": {
+      "crm": "unified:CRM",
+      "hris": "unified:HRIS",
+      "ats": "unified:ATS",
+      "accounting": "unified:Accounting",
+      "file-storage": "unified:FileStorage",
+      "ticketing": "unified:Ticketing",
+      "marketing-automation": "unified:MarketingAutomation",
+      "ecommerce": "unified:ECommerce",
+      "payroll": "unified:Payroll",
+      "banking": "unified:Banking",
+      "payments": "unified:Payments",
+      "data-pipeline": "unified:DataPipeline"
+    }
+  }
+}

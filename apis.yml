@@ -2,17 +2,24 @@ aid: unified-apis
 name: Unified APIs
 description: >-
   This is the index of unified API service and tooling repos being tracked
-  by the API Evangelist network.
+  by the API Evangelist network. Unified APIs (also called integration hubs,
+  API aggregators, or universal connectors) abstract multiple third-party APIs
+  behind a single standardized interface, enabling software teams to build one
+  integration instead of many. The market has grown to 23+ vendors in 2026,
+  covering HR, accounting, CRM, file storage, ATS, e-commerce, and data
+  pipeline use cases.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Aggregation
   - Normalization
   - Unified API
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/unified-apis/refs/heads/main/apis.yml
+  - Integration
+  - SaaS
+  - iPaaS
+url: https://raw.githubusercontent.com/api-evangelist/unified-apis/refs/heads/main/apis.yml
 created: '2026-03-27'
-modified: '2026-03-27'
+modified: '2026-05-03'
 specificationVersion: '0.19'
 apis: []
 network:
@@ -78,6 +85,13 @@ network:
     url: https://raw.githubusercontent.com/api-evangelist/vessel/refs/heads/main/apis.yml
   - name: Yodlee
     url: https://raw.githubusercontent.com/api-evangelist/yodlee/refs/heads/main/apis.yml
+common:
+  - type: JSON-LD
+    url: json-ld/unified-apis-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/unified-apis-vocabulary.yml
+  - type: JSONSchema
+    url: json-schema/unified-apis-connector-schema.json
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

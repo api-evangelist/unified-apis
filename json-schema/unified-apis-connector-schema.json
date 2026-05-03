@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/api-evangelist/unified-apis/blob/main/json-schema/unified-apis-connector-schema.json",
+  "title": "Unified API Connector",
+  "description": "Schema representing a connector in a unified API platform — a single integration mapping to one or more upstream third-party APIs normalized under a common data model.",
+  "type": "object",
+  "required": ["connectorId", "name", "category", "provider"],
+  "properties": {
+    "connectorId": {
+      "type": "string",
+      "description": "Unique identifier for the connector (slug, e.g., salesforce-crm)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the connector (e.g., Salesforce)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of what the connector does and what data it normalizes"
+    },
+    "provider": {
+      "type": "string",
+      "description": "The upstream API provider being connected (e.g., Salesforce, HubSpot, QuickBooks)"
+    },
+    "providerUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the upstream provider's API documentation"
+    },
+    "category": {
+      "type": "string",
+      "description": "The unified API category this connector belongs to",
+      "enum": [
+        "crm",
+        "hris",
+        "ats",
+        "accounting",
+        "file-storage",
+        "ticketing",
+        "marketing-automation",
+        "ecommerce",
+        "payroll",
+        "banking",
+        "payments",
+        "data-pipeline",
+        "communication",
+        "project-management",
+        "other"
+      ]
+    },
+    "authType": {
+      "type": "string",
+      "description": "Authentication method used by the upstream provider",
+      "enum": ["oauth2", "api-key", "basic", "oauth1", "jwt", "custom"]
+    },
+    "dataObjects": {
+      "type": "array",
+      "description": "The normalized data objects this connector exposes",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supportedOperations": {
+      "type": "array",
+      "description": "CRUD operations supported by this connector",
+      "items": {
+        "type": "string",
+        "enum": ["create", "read", "update", "delete", "list", "search", "sync"]
+      }
+    },
+    "webhookSupport": {
+      "type": "boolean",
+      "description": "Whether the connector supports real-time webhooks from the upstream provider"
+    },
+    "fieldMapping": {
+      "type": "object",
+      "description": "Mapping of normalized field names to provider-specific field names",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "rateLimits": {
+      "type": "object",
+      "description": "Known rate limits imposed by the upstream provider",
+      "properties": {
+        "requestsPerMinute": {
+          "type": "integer"
+        },
+        "requestsPerDay": {
+          "type": "integer"
+        }
+      }
+    },
+    "sandboxAvailable": {
+      "type": "boolean",
+      "description": "Whether a sandbox or test environment is available for this connector"
+    },
+    "status": {
+      "type": "string",
+      "description": "Connector availability status",
+      "enum": ["ga", "beta", "alpha", "deprecated"]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+name: Unified APIs Vocabulary
+description: >-
+  Vocabulary and taxonomy for the unified API ecosystem, covering integration
+  patterns, data normalization, connector architecture, and the landscape of
+  unified API platforms serving SaaS integration needs.
+tags:
+  - Unified API
+  - Integration
+  - Aggregation
+  - SaaS
+  - Connectors
+modified: '2026-05-03'
+
+domains:
+  - name: Core Concepts
+    description: Fundamental concepts in the unified API category
+    terms:
+      - term: Unified API
+        definition: A single standardized API that abstracts multiple third-party APIs behind one interface with normalized data models
+        aliases: [Universal API, Aggregation API]
+      - term: Connector
+        definition: An integration module mapping a specific upstream provider's API to the unified data model
+      - term: Data Normalization
+        definition: The process of transforming provider-specific data structures into a consistent, canonical schema
+      - term: Field Mapping
+        definition: The explicit correspondence between normalized field names and provider-specific field names
+      - term: Integration Hub
+        definition: A platform offering a marketplace of pre-built connectors for SaaS and business applications
+        aliases: [iPaaS]
+      - term: Passthrough API
+        definition: An API endpoint in a unified platform that proxies requests directly to the upstream provider without normalization
+      - term: Bidirectional Sync
+        definition: Data synchronization that flows in both directions — from and to the upstream provider
+
+  - name: Vertical Categories
+    description: The main software verticals served by unified API platforms
+    terms:
+      - term: CRM
+        definition: Customer Relationship Management — platforms managing contacts, leads, deals, and customer interactions (Salesforce, HubSpot, Pipedrive)
+      - term: HRIS
+        definition: Human Resource Information System — platforms managing employees, payroll, benefits, and org structure (Workday, BambooHR, Rippling)
+      - term: ATS
+        definition: Applicant Tracking System — platforms managing job postings, candidates, and hiring workflows (Lever, Greenhouse, Ashby)
+      - term: Accounting
+        definition: Financial record-keeping platforms managing invoices, expenses, journals, and financial statements (QuickBooks, Xero, NetSuite)
+      - term: File Storage
+        definition: Cloud file storage and document management platforms (Google Drive, Dropbox, Box, SharePoint)
+      - term: Ticketing
+        definition: Customer support and issue tracking platforms (Zendesk, Jira, ServiceNow, Linear)
+      - term: Marketing Automation
+        definition: Platforms managing email campaigns, marketing workflows, and customer journeys (Marketo, Mailchimp, HubSpot Marketing)
+      - term: Data Pipeline
+        definition: ETL/ELT platforms for extracting and loading data between systems (Fivetran, Airbyte, Stitch)
+
+  - name: Technical Architecture
+    description: Technical patterns and concepts in unified API architecture
+    terms:
+      - term: Canonical Data Model
+        definition: The normalized, provider-agnostic schema that all connectors translate to and from
+      - term: Webhook Relay
+        definition: A unified API platform's ability to receive provider-specific webhooks and normalize them to a standard format
+      - term: OAuth 2.0 Orchestration
+        definition: A unified API platform's management of OAuth 2.0 flows on behalf of end users for connected integrations
+      - term: Rate Limit Handling
+        definition: Automatic management of upstream provider API rate limits including backoff, queuing, and retry logic
+      - term: Sandbox Environment
+        definition: A test environment provided by a connector or upstream platform for integration development without affecting production data
+      - term: Scopes
+        definition: OAuth permission scopes controlling which data objects a connector can access on behalf of a user
+      - term: Tenant
+        definition: A single end-customer's credentials and configuration within a unified API integration
+
+  - name: Integration Patterns
+    description: Design patterns in API integration and normalization
+    terms:
+      - term: Read Model
+        definition: Integration pattern focused on one-way data extraction from upstream providers to a central data store
+      - term: Write-Through
+        definition: Integration pattern where data written to the unified API is immediately propagated to the upstream provider
+      - term: Event-Driven
+        definition: Integration pattern relying on webhooks and events rather than polling for real-time data synchronization
+      - term: Polling
+        definition: Periodically querying an upstream provider for new or changed records when webhooks are not available
+      - term: Delta Sync
+        definition: Synchronizing only records that have changed since the last sync, using cursors or timestamps
+      - term: Full Sync
+        definition: Re-fetching all records from the upstream provider, used for initial loads or reconciliation
+
+  - name: Platform Landscape
+    description: Key platforms in the unified API market as of 2026
+    terms:
+      - term: Merge
+        definition: Leading unified API platform with 220+ integrations across HRIS, ATS, CRM, accounting, and ticketing
+        url: https://merge.dev/
+      - term: Apideck
+        definition: Unified API platform covering CRM, HRIS, ATS, file storage, and accounting with real-time data
+        url: https://apideck.com/
+      - term: Codat
+        definition: Unified API platform specialized in financial and accounting data for fintech use cases
+        url: https://codat.io/
+      - term: Unified.to
+        definition: Unified API platform offering normalized access to CRM, HR, and accounting providers
+        url: https://unified.to/
+      - term: Nango
+        definition: Open-source unified API and OAuth infrastructure platform
+        url: https://nango.dev/
+      - term: Airbyte
+        definition: Open-source data integration platform with 300+ connectors for data pipeline use cases
+        url: https://airbyte.com/
+      - term: Fivetran
+        definition: Automated data pipeline platform providing managed connectors for data warehouse integration
+        url: https://fivetran.com/
