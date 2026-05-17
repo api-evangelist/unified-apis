@@ -86,7 +86,7 @@ network:
   - name: Yodlee
     url: https://raw.githubusercontent.com/api-evangelist/yodlee/refs/heads/main/apis.yml
 common:
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/unified-apis-context.jsonld
   - type: Vocabulary
     url: vocabulary/unified-apis-vocabulary.yml
