@@ -1,0 +1,115 @@
+meta:
+  name: Unified APIs
+  description: This is the index of unified API service and tooling repos being tracked
+    by the API Evangelist network. Unified APIs (also called integration hubs, API
+    aggregators, or universal connectors) abstract multiple third-party APIs behind
+    a single standardized interface, enabling software teams to build one integration
+    instead of many. The market has grown to 23+ vendors in 2026, covering HR, accounting,
+    CRM, file storage, ATS, e-commerce, and data pipeline use cases.
+  tags:
+  - Aggregation
+  - Normalization
+  - Unified API
+  - Integration
+  - SaaS
+  - iPaaS
+  portal: null
+  github: null
+  repo: unified-apis
+services_tools:
+- name: Airbyte
+  repo: https://github.com/api-evangelist/airbyte
+  apisio: https://providers.apis.io/providers/airbyte/
+- name: Alloy Automation
+  repo: https://github.com/api-evangelist/alloy-automation
+  apisio: https://providers.apis.io/providers/alloy-automation/
+- name: Ampersand
+  repo: https://github.com/api-evangelist/ampersand
+  apisio: https://providers.apis.io/providers/ampersand/
+- name: Apideck
+  repo: https://github.com/api-evangelist/apideck
+  apisio: https://providers.apis.io/providers/apideck/
+- name: Basiq
+  repo: https://github.com/api-evangelist/basiq
+  apisio: https://providers.apis.io/providers/basiq/
+- name: Bindbee
+  repo: https://github.com/api-evangelist/bindbee
+  apisio: https://providers.apis.io/providers/bindbee/
+- name: Census
+  repo: https://github.com/api-evangelist/census
+  apisio: https://providers.apis.io/providers/census/
+- name: Codat
+  repo: https://github.com/api-evangelist/codat
+  apisio: https://providers.apis.io/providers/codat/
+- name: Composio
+  repo: https://github.com/api-evangelist/composio
+  apisio: https://providers.apis.io/providers/composio/
+- name: Cyclr
+  repo: https://github.com/api-evangelist/cyclr
+  apisio: https://providers.apis.io/providers/cyclr/
+- name: DigitalAPI
+  repo: https://github.com/api-evangelist/digitalapi
+  apisio: https://providers.apis.io/providers/digitalapi/
+- name: Finverse
+  repo: https://github.com/api-evangelist/finverse
+  apisio: https://providers.apis.io/providers/finverse/
+- name: Fivetran
+  repo: https://github.com/api-evangelist/fivetran
+  apisio: https://providers.apis.io/providers/fivetran/
+- name: Hightouch
+  repo: https://github.com/api-evangelist/hightouch
+  apisio: https://providers.apis.io/providers/hightouch/
+- name: Hotglue
+  repo: https://github.com/api-evangelist/hotglue
+  apisio: https://providers.apis.io/providers/hotglue/
+- name: IntegrationOS
+  repo: https://github.com/api-evangelist/integration-os
+  apisio: https://providers.apis.io/providers/integration-os/
+- name: Knit
+  repo: https://github.com/api-evangelist/knit
+  apisio: https://providers.apis.io/providers/knit/
+- name: Kombo
+  repo: https://github.com/api-evangelist/kombo
+  apisio: https://providers.apis.io/providers/kombo/
+- name: Merge
+  repo: https://github.com/api-evangelist/merge
+  apisio: https://providers.apis.io/providers/merge/
+- name: Nango
+  repo: https://github.com/api-evangelist/nango
+  apisio: https://providers.apis.io/providers/nango/
+- name: Paragon
+  repo: https://github.com/api-evangelist/paragon
+  apisio: https://providers.apis.io/providers/paragon/
+- name: Plaid
+  repo: https://github.com/api-evangelist/plaid
+  apisio: https://providers.apis.io/providers/plaid/
+- name: Polytomic
+  repo: https://github.com/api-evangelist/polytomic
+  apisio: https://providers.apis.io/providers/polytomic/
+- name: Rutter
+  repo: https://github.com/api-evangelist/rutter
+  apisio: https://providers.apis.io/providers/rutter/
+- name: Stitch
+  repo: https://github.com/api-evangelist/stitch
+  apisio: https://providers.apis.io/providers/stitch/
+- name: Supaglue
+  repo: https://github.com/api-evangelist/supaglue
+  apisio: https://providers.apis.io/providers/supaglue/
+- name: Teller
+  repo: https://github.com/api-evangelist/teller
+  apisio: https://providers.apis.io/providers/teller/
+- name: TrueLayer
+  repo: https://github.com/api-evangelist/truelayer
+  apisio: https://providers.apis.io/providers/truelayer/
+- name: Unified.to
+  repo: https://github.com/api-evangelist/unified-to
+  apisio: https://providers.apis.io/providers/unified-to/
+- name: Vessel
+  repo: https://github.com/api-evangelist/vessel
+  apisio: https://providers.apis.io/providers/vessel/
+- name: Yodlee
+  repo: https://github.com/api-evangelist/yodlee
+  apisio: https://providers.apis.io/providers/yodlee/
+features: []
+use_cases: []
+integrations: []
