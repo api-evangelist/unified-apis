@@ -1,0 +1,31 @@
+related:
+- name: Embedded iPaaS
+  url: https://embedded-ipaas.apievangelist.com
+  icon: https://embedded-ipaas.apievangelist.com/icon.png
+  description: This is the index of embedded iPaaS service and tooling repos being tracked by the API
+    Evangelist network.
+- name: iPaaS
+  url: https://ipaas.apievangelist.com
+  icon: https://ipaas.apievangelist.com/icon.png
+  description: This is the index of iPaaS (integration platform as a service) repos being tracked by the
+    API Evangelist network.
+- name: Integrations
+  url: https://integrations.apievangelist.com
+  icon: https://integrations.apievangelist.com/icon.png
+  description: An index and topic collection covering the broad integration tooling market, including
+    iPaaS and embedded-iPaaS platforms, workflow automation tools, unified API providers, ETL…
+- name: Aggregation
+  url: https://aggregation.apievangelist.com
+  icon: https://aggregation.apievangelist.com/icon.png
+  description: An index and topic collection covering API aggregation, marketplaces, directories, unified
+    APIs, and catalog platforms. API aggregation brings together multiple APIs under a…
+- name: SaaS Management
+  url: https://saas-management.apievangelist.com
+  icon: https://saas-management.apievangelist.com/icon.png
+  description: SaaS Management covers the tools, platforms, and practices used by organizations to discover,
+    manage, optimize, and secure their portfolio of SaaS applications. The global SaaS…
+- name: Logging
+  url: https://logging.apievangelist.com
+  icon: https://logging.apievangelist.com/icon.png
+  description: An index and topic collection covering log ingestion, log search, log aggregation, and
+    log pipeline services. Logging platforms collect event records from applications,…
