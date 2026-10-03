@@ -1,7 +1,7 @@
 ---
-title: Best MCP Servers and Tools for Salesforce AI Agent Integrations (2026)
-link: https://truto.one/blog/best-mcp-servers-and-tools-for-salesforce-ai-agent-integrations-2026/
-published: '2026-08-18'
+title: How to Build a Custom MCP Server for Claude to Access SaaS APIs
+link: https://truto.one/blog/how-to-build-a-custom-mcp-server-for-claude-to-access-saas-apis/
+published: '2026-08-19'
 provider: truto
 repo: https://github.com/api-evangelist/truto
 domain: truto.one

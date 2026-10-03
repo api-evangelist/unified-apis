@@ -1,7 +1,7 @@
 ---
-title: How to Publish a Dedicated MCP Integration Reference for Enterprises
-link: https://truto.one/blog/how-to-publish-a-dedicated-mcp-integration-reference-for-enterprises/
-published: '2026-05-26'
+title: 'Transform Code & MCP Examples: A Hands-On Engineering Guide for SaaS APIs'
+link: https://truto.one/blog/hands-on-engineering-guide-transform-code-mcp-examples-for-saas/
+published: '2026-05-27'
 provider: truto
 repo: https://github.com/api-evangelist/truto
 domain: truto.one
