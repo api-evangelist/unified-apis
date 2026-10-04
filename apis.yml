@@ -15,6 +15,13 @@ tags:
   - Normalization
   - Unified API
   - Integration
+  - Software-as-a-Service
+  - iPaaS
+tags_raw:
+  - Aggregation
+  - Normalization
+  - Unified API
+  - Integration
   - SaaS
   - iPaaS
 url: https://raw.githubusercontent.com/api-evangelist/unified-apis/refs/heads/main/apis.yml
