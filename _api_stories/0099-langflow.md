@@ -1,7 +1,7 @@
 ---
-title: Introducing MCP Integration in Langflow
-link: https://langflow.org/blog/introducing-mcp-integration-in-langflow
-published: '2025-03-12'
+title: 'The Troubleshooter: Using Render''''s MCP service to Make Life Easier'
+link: https://langflow.org/blog/the-troubleshooter-using-mcp-in-render
+published: '2025-08-14'
 provider: langflow
 repo: https://github.com/api-evangelist/langflow
 domain: langflow.org
