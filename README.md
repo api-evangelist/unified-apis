@@ -1,68 +1,91 @@
 # Unified APIs
 
-This is the index of unified API service and tooling repos being tracked by the API Evangelist network. Unified APIs (also called integration hubs, API aggregators, or universal connectors) abstract multiple third-party APIs behind a single standardized interface, enabling software teams to build one integration instead of many.
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
 
-The market has grown to 23+ vendors in 2026, covering HR, accounting, CRM, file storage, ATS, e-commerce, and data pipeline use cases. Key patterns include data normalization, field mapping, OAuth orchestration, and webhook relay.
+This is the index of unified API service and tooling repos being tracked by the API Evangelist network. Unified APIs (also called integration hubs, API aggregators, or universal connectors) abstract multiple third-party APIs behind a single standardized interface, enabling software teams to build one integration instead of many. The market has grown to 23+ vendors in 2026, covering HR, accounting, CRM, file storage, ATS, e-commerce, and data pipeline use cases.
 
-## Network
+**Areas:** Aggregation · Normalization · Unified API · Integration · Software-as-a-Service · iPaaS
 
-This index tracks the following unified API platforms:
+## Unified APIs on APIs.io
 
-| Platform | Description |
-|----------|-------------|
-| [Airbyte](https://raw.githubusercontent.com/api-evangelist/airbyte/refs/heads/main/apis.yml) | Open-source data integration with 300+ connectors |
-| [Alloy Automation](https://raw.githubusercontent.com/api-evangelist/alloy-automation/refs/heads/main/apis.yml) | Embedded integration platform for SaaS |
-| [Ampersand](https://raw.githubusercontent.com/api-evangelist/ampersand/refs/heads/main/apis.yml) | Integration platform for B2B SaaS |
-| [Apideck](https://raw.githubusercontent.com/api-evangelist/apideck/refs/heads/main/apis.yml) | Unified API for CRM, HRIS, ATS, accounting |
-| [Basiq](https://raw.githubusercontent.com/api-evangelist/basiq/refs/heads/main/apis.yml) | Open banking data platform |
-| [Bindbee](https://raw.githubusercontent.com/api-evangelist/bindbee/refs/heads/main/apis.yml) | Unified HRIS and ATS API |
-| [Census](https://raw.githubusercontent.com/api-evangelist/census/refs/heads/main/apis.yml) | Reverse ETL platform |
-| [Codat](https://raw.githubusercontent.com/api-evangelist/codat/refs/heads/main/apis.yml) | Unified financial data API for fintech |
-| [Composio](https://raw.githubusercontent.com/api-evangelist/composio/refs/heads/main/apis.yml) | AI agent integration platform |
-| [Cyclr](https://raw.githubusercontent.com/api-evangelist/cyclr/refs/heads/main/apis.yml) | Embedded iPaaS for SaaS products |
-| [Fivetran](https://raw.githubusercontent.com/api-evangelist/fivetran/refs/heads/main/apis.yml) | Managed data pipeline connectors |
-| [Hightouch](https://raw.githubusercontent.com/api-evangelist/hightouch/refs/heads/main/apis.yml) | Reverse ETL and data activation |
-| [Merge](https://raw.githubusercontent.com/api-evangelist/merge/refs/heads/main/apis.yml) | Unified API with 220+ integrations |
-| [Nango](https://raw.githubusercontent.com/api-evangelist/nango/refs/heads/main/apis.yml) | Open-source unified API and OAuth |
-| [Plaid](https://raw.githubusercontent.com/api-evangelist/plaid/refs/heads/main/apis.yml) | Financial data network |
-| [Rutter](https://raw.githubusercontent.com/api-evangelist/rutter/refs/heads/main/apis.yml) | Unified commerce and accounting API |
-| [Unified.to](https://raw.githubusercontent.com/api-evangelist/unified-to/refs/heads/main/apis.yml) | Normalized CRM, HR, and accounting access |
-| [Yodlee](https://raw.githubusercontent.com/api-evangelist/yodlee/refs/heads/main/apis.yml) | Financial data aggregation |
+Everything profiled for Unified APIs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/unified-apis/](https://apis.io/providers/unified-apis/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+## API Evangelist rating
 
-### JSON Schema
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-| File | Description |
-|------|-------------|
-| [json-schema/unified-apis-connector-schema.json](json-schema/unified-apis-connector-schema.json) | Schema for a unified API connector definition |
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-### JSON Structure
+## How this profile is made
 
-| File | Description |
-|------|-------------|
-| [json-structure/unified-apis-connector-structure.json](json-structure/unified-apis-connector-structure.json) | Field-level documentation for a Connector entity |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-### JSON-LD
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Unified APIs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| File | Description |
-|------|-------------|
-| [json-ld/unified-apis-context.jsonld](json-ld/unified-apis-context.jsonld) | JSON-LD context for unified API and connector vocabulary |
+## Open an issue
 
-### Examples
-
-| File | Description |
-|------|-------------|
-| [examples/unified-apis-connector-example.json](examples/unified-apis-connector-example.json) | Example Salesforce CRM connector definition |
-
-### Vocabulary
-
-| File | Description |
-|------|-------------|
-| [vocabulary/unified-apis-vocabulary.yml](vocabulary/unified-apis-vocabulary.yml) | Domain vocabulary for unified APIs, integration patterns, and platform landscape |
-
-## Related Resources
-
-- [What is a Unified API? (Apideck)](https://www.apideck.com/blog/what-is-a-unified-api)
-- [Best Unified API Platforms in 2026 (Merge)](https://www.merge.dev/blog/best-unified-api)
-- [10 Best Unified API Platforms (Ampersand)](https://www.withampersand.com/blog/the-10-best-unified-api-platforms-in-2026)
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/unified-apis/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
